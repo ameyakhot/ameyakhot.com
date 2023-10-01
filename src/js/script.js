@@ -59,11 +59,11 @@ if (currentTheme) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  let myDate = document.querySelector("#datee");
-  const yes = new Date().getFullYear();
-  myDate.innerHTML = yes;
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   let myDate = document.querySelector("#datee");
+//   const yes = new Date().getFullYear();
+//   myDate.innerHTML = yes;
+// });
 
 // Popup
 

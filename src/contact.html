@@ -27,14 +27,30 @@
         .email-text {
             font-size: 0.9rem
         }
+
+        [data-theme="dark"] body {
+            background-color: black;
+        }
+        
     </style>
+    <script>
+        const currentTheme = localStorage.getItem("theme");
+        if (currentTheme) {
+            document.documentElement.setAttribute("data-theme", currentTheme);
+
+            // Update the theme toggle switch state
+            if (currentTheme === "dark") {
+            toggleSwitch.checked = true;
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="centered-content">
         <div class="email-pun">
-            <p>Email me</p>
+            <p class="plain-text">Email me</p>
             <a class="email-text" href="#">ameyakhot@protonmail.com</a>
-            <p>OR</p>
+            <p class="plain-text">OR</p>
         </div>
         <div class="social" style="display:flex; flex-direction: row; justify-content: space-around; margin-top: 20px;">
             <a href="https://www.linkedin.com/in/ameyakhot/" target="_blank">
