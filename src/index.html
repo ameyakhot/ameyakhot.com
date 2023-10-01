@@ -1,4 +1,3 @@
-this frontendDOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,34 +12,34 @@ this frontendDOCTYPE html>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/favicon/apple-touch-icon.png"
+      href="./assets/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
+      href="./assets/favicon/favicon-16x16.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/assets/favicon/favicon-32x32.png"
+      href="./assets/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/assets/favicon/android-chrome-192x192.png"
+      href="./assets/favicon/android-chrome-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="512x512"
-      href="/assets/favicon/android-chrome-512x512.png"
+      href="./assets/favicon/android-chrome-512x512.png"
     />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -52,14 +51,31 @@ this frontendDOCTYPE html>
     <link rel="stylesheet" href="css/skills-styles.css" />
   </head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DMVQ8Q1QG"></script>
+  <script src="js/env.js"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    window.onload = function() {
+      const GA_KEY = env.GA_TRACKING_ID;
 
-    gtag('config', 'G-0DMVQ8Q1QG');
-  </script>
+      // Create a script element
+      const script = document.createElement('script');
+
+      // Set the src attribute dynamically with your GA tracking ID
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_KEY}`;
+
+      // Append the script element to the document
+      document.head.appendChild(script);
+
+      // Initialize Google Analytics after the script has loaded
+      script.onload = function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', GA_KEY);
+        };
+      };
+    </script>
+
+
   <body>
     <header id="hero">
         <!-- Navbar -->
