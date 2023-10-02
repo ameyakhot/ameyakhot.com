@@ -436,13 +436,22 @@ body {
   }
 
   .card {
-    max-width: 90%; /* Adjusted size for mobile screens */
-    margin: 20px auto; /* Center the card horizontally with top and bottom margin */
+    max-width: 100%; /* Adjusted size for mobile screens */
+    margin: 20px; /* Center the card horizontally with top and bottom margin */
+    overflow: hidden; 
   }
-
 
   #project-summary {
     font-size: 12px !important; /* Change this to your desired font size */
   }
+
+  .card {
+    box-shadow: none; /* Remove shadow on mobile screens */
+  }
+
+  .project-info{
+    display: none;
+  }
+
 }
 
