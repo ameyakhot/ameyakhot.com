@@ -1,385 +1,125 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="./assets/metadata-image.jpeg" />
-    <!-- Primary Meta Tags -->
-    <title>Ameya Khot</title>
-    <meta name="title" content="Portfolio Website" />
-
-    <!-- Link -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./assets/favicon/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="./assets/favicon/android-chrome-512x512.png"
-    />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico" />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+    <title>Ameya Khot - Quantum ML Researcher</title>
+    <meta name="title" content="Quantum Machine Learning Researcher" />
+    
+    <!-- Links -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/skills-styles.css" />
-  </head>
-  <!-- Google tag (gtag.js) -->
-  <script src="js/env.js"></script>
-  <script>
-    window.onload = function() {
-      const GA_KEY = env.GA_TRACKING_ID;
-
-      // Create a script element
-      const script = document.createElement('script');
-
-      // Set the src attribute dynamically with your GA tracking ID
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_KEY}`;
-
-      // Append the script element to the document
-      document.head.appendChild(script);
-
-      // Initialize Google Analytics after the script has loaded
-      script.onload = function() {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', GA_KEY);
-        };
-      };
-    </script>
-
-
-  <body>
+</head>
+<body>
     <header id="hero">
-        <!-- Navbar -->
         <nav class="navbar">
-          <div class="container">
-          <!-- Logo -->
-          <h1 id="logo">
-            <a href="#" 
-              ><img src="./assets/logo.png" alt="Your Logo"
-            /></a>
-          </h1>
-          <!-- Navbar links -->
-          <ul class="nav-menu">
-            <li><a class="nav-link" href="#skills">SKILLS</a></li>
-            <li><a class="nav-link" href="#publications">PUBLICATIONS</a></li>
-            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link" target="_blank" href="./contact.html">CONTACT</a></li>
-            <li>
-              <a
-                class="nav-link btn btn-primary"
-                href="./assets/ameyakhot.pdf"
-                target="_blank"
-                >RESUME <i class="fas fa-arrow-right"></i
-              ></a>
-            </li>
-
-            <!-- Toggle switch -->
-            <div class="theme-switch">
-              <input type="checkbox" id="switch" />
-              <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" />
-                <img class="sun" src="assets/sun.svg" />
-              </label>
+            <div class="container">
+                <h1 id="logo">
+                    <a href="#"><img src="./assets/logo.png" alt="Your Logo" /></a>
+                </h1>
+                <ul class="nav-menu">
+                    <li><a class="nav-link" href="#publications">RESEARCH</a></li>
+                    <li><a class="nav-link" href="https://qfoundry.in/">QFOUNDRY</a></li>
+                    <li><a class="nav-link" href="#blogs">BLOGS</a></li>
+                    <li>
+                        <a class="nav-link btn btn-primary" href="./assets/ameyakhot.pdf" target="_blank">RESUME</a>
+                    </li>
+                </ul>
             </div>
-
-            <!-- Hamburger menu -->
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
-      </nav>
-      <section class="header-container">
-            <img
-              class="profile-image"
-              src="assets/ameyakhot_profile_no_bg.png"
-              alt=""
-            />
+        </nav>
+        <section class="header-container">
+            <img class="profile-image" src="assets/ameyakhot_profile_no_bg.png" alt="" />
             <h1>Hi, I'm Ameya Khot</h1>
-  
             <div class="content-text">
-              <h2>I'm a Backend Wizard</h2>
-              <h6>That's why this frontend design isn't as good!</h6>
-              <p>
-                Driving Innovation Through Scalable Backend & Deep Tech Solutions.
-              </p>
+                <h2>Quantum Machine Learning Researcher</h2>
+                <p>
+                    Exploring the intersection of <b>Quantum Computing</b> and <b>Machine Learning</b>, pushing the boundaries of what’s possible with emerging technologies.
+                </p>
+                <p>Also, building QFoundry.in</p>
             </div>
-            <a
-              href="./contact.html"
-              class="btn btn-secondary"
-              target="_blank"
-              >Connect With Me</a
-            >
-      </section>
+        </section>
     </header>
-    
-    <!-- skills section -->
-      <section id="skills" class="skills-section container">
-        <div class="new-division"></div>
-        <div class="container">
-          <h2 class="section-title">Skills</h2>
-          <div class="skills-grid">
 
-            <!-- DSA Card -->
-            <div class="skill-card">
-              <div class="skill-icon" >
-                <img src="./assets/skills-icons/algorithm.png" style="width:60px; height: 60px;"/>
-              </div>
-              <h3 class="skill-title">Data Structures & Algorithms</h3>
-              <div class="skill-description" style="text-align: justify; margin: 0 5%;">
-                Crafting efficient solutions, maintaining clean, scalable code, and systematically solving complex problems. 
-                These skills drive my contributions to robust, high-performance software systems.
-              </div>
-            </div>
-
-            <!-- Programming Languages -->
-            <div class="skill-card">
-              <div class="skill-icon">
-                <img src="./assets/skills-icons/pl.png" style="width:60px; height: 60px;"/>
-              </div>
-              <h3 class="skill-title">Programming Languages</h3>
-              <div class="skill-description" style="text-align: justify; margin: 0 5%;">
-                I excel in <strong>Python, Java, and JavaScript</strong>, powering robust backend solutions, game development, machine learning, and frontend development. 
-                My Python skills extend to building efficient and reliable solutions for server-side development.
-              </div>
-            </div>
-
-             <!-- Programming Languages -->
-             <div class="skill-card">
-              <div class="skill-icon">
-                <img src="./assets/skills-icons/web.png" style="width:60px; height: 60px;"/>
-              </div>
-              <h3 class="skill-title">Web Technologies</h3>
-              <div class="skill-description" style="text-align: justify; margin: 0 5%;">
-                Highly skilled in developing robust and scalable backend solutions using Spring, Spring Boot, Hibernate, Django, Flask, FastAPI, REST API, and gRPC. 
-                Experienced in crafting efficient and reliable server-side systems.
-              </div>
-            </div>
-
-              <!-- Architectural Patterns -->
-              <div class="skill-card">
-                <div class="skill-icon" >
-                  <img src="./assets/skills-icons/patterns.png" style="width:60px; height: 60px;"/>
-                </div>
-                <h3 class="skill-title">Architectural Patterns</h3>
-                <div class="skill-description" style="text-align: justify; margin: 0 5%;">
-                  Skilled in building scalable code using MVC and Client-Server architecture. Experienced in microservices and exploring serverless design.
-                </div>
-              </div>
-  
-              <!-- Communication between components -->
-              <div class="skill-card">
-                <div class="skill-icon">
-                  <img src="./assets/skills-icons/pipeline.png" style="width:60px; height: 60px;"/>
-                </div>
-                <h3 class="skill-title">Inter-Component Communication</h3>
-                <div class="skill-description" style="text-align: justify; margin: 0 5%;">
-                  Implementing efficient message broker systems, enhancing data flow, and ensuring asynchronous communication for real-time processing. Experience with <strong>Apache Kafka</strong> and exploring <strong>RabbitMQ</strong>. 
-                </div>
-              </div>
-  
-                <!-- API Gateway -->
-                <div class="skill-card">
-                <div class="skill-icon">
-                  <img src="./assets/skills-icons/gateway.png" style="width:60px; height: 60px;"/>
-                </div>
-                <h3 class="skill-title">API Gateway & Security</h3>
-                <div class="skill-description" style="text-align: justify; margin: 0 5%;">
-                  Skilled in NGINX for reverse proxy and load balancing. Exploring Netflix Zuul for advanced architecture. Experienced in JWT for security, eager for OAuth in authentication.
-                </div>
-              </div>
-
-              <!-- Security -->
-              <div class="skill-card">
-                <div class="skill-icon">
-                  <img src="./assets/skills-icons/cloud.png" style="width:60px; height: 60px;"/>
-                </div>
-                <h3 class="skill-title">Cloud Technology & Containerisation</h3>
-                <div class="skill-description" style="text-align: justify; margin: 0 5%;">
-                  Skilled in AWS services like EC2, S3, RDS, SQS, and Elastic Beanstalk. Actively expanding expertise with Amazon Kinesis for real-time data handling and building Lambda applications. Proficient in Docker and currently exploring Kubernetes.
-                </div>
-              </div>
-
-              <!-- API Gateway -->
-              <div class="skill-card">
-                <div class="skill-icon">
-                  <img src="./assets/skills-icons/performace.png" style="width:60px; height: 60px;"/>
-                </div>
-                <h3 class="skill-title">Resistance & Fault Tolerant Code</h3>
-                <div class="skill-description" style="text-align: justify; margin: 0 5%;">
-                  Skilled at quickly learning and implementing techniques to handle system failures, such as circuit breakers, fallback plans, and disaster recovery as the utility demands.
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
-      
-
-      <!-- Publications -->
-      <section id="publications" class="about-container container">
+    <!-- Research Publications Section -->
+    <section id="publications" class="about-container container">
         <div class="new-division"></div>
         <div class="content-text">
-          <h2>Publications</h2>
-          <br/>
-          <ul>
-            <li>
-              <i>A. Akash, <strong>A. Khot</strong>, T. Kim</i>, 
-              <br/>
-              "<u>Quantum Annealing-Based Machine Learning for Battery Health Monitoring Robust to Adversarial Attacks</u>", 
-              <br/>
-              IEEE Energy Conversion Congress and Exposition (ECCE) 2023, Nashville, Tennessee, <strong>Accepted</strong>.
-              <section class="paper-summary">
-                <h4 style="margin-top: 5px; ">Summary:</h4>
-                <p style="text-align: justify;">
-                  This paper tackles cybersecurity challenges in battery health monitoring systems within networked environments. It introduces an adversarial attack on such systems and puts forth a Quantum Boost (QBoost)-based algorithm, expertly trained on the D-Wave Quantum Annealing (QA) processor, to effectively counteract these cyber threats. The QBoost methodology exhibits remarkable resilience against adversarial attacks when juxtaposed with the Random Forest (RF)-based approach, while RF excels in standard operational scenarios. Furthermore, comprehensive optimization details of the QBoost algorithm are elaborated upon in the complete paper.
-                </p>
-              </section>
-            </li>
-          
-            <br />
-          
-            <li>
-              <i>A. Akash, B. Ahn, A. Jenkins, <strong>A. Khot</strong>, L. Silva, H. Tavares-Vengas, T. Kim,</i> 
-              <br/>"<u>Smart Grid Device-Specific Malware File Detection using Quantum-Convolutional Neural Network with Deep Transfer Learning</u>", 
-              <br/>IEEE Design Methodologies Conference 2023, Miami, Florida, <strong>Accepted</strong>.
-              <section class="paper-summary">
-                <h4 style="margin-top: 5px; ">Summary:</h4>
-                <p style="text-align: justify;">
-                  In light of growing cybersecurity concerns surrounding smart grid devices, this paper presents an innovative cloud-based solution for detecting malware. This system leverages advanced technology, including a quantum-convolutional neural network (QCNN) with deep transfer learning (DTL), to effectively identify malware in various smart grid devices. The implementation on the IBM Watson Studio platform, powered by IBM Quantum processing, demonstrates significant improvements in detecting malicious files when compared to traditional CNN methods.
-                </p>
-              </section>
-            </li>
-          </ul>
-          
+            <h2>Research Publications</h2>
+            <br/>
+            <ul>
+                <li>
+                    <i><b>A. Khot</b>, T. Kim, A. Akash, C. Kim, W. Moy</i>
+                    <br/>
+                    <b>"Quantum-Inspired Machine Learning Framework using a Physics-based Ising Solver Chip"</b>
+                    <br/>
+                    IEEE Industrial Cyber-Physical Systems, 2024.
+                </li>
+                <br/>
+                <li>
+                    <i>A. Akash, <b>A. Khot</b>, T. Kim</i>
+                    <br/>
+                    <b>"Quantum Annealing-Based Machine Learning for Battery Health Monitoring Robust to Adversarial Attacks"</b>
+                    <br/>
+                    IEEE Energy Conversion Congress and Exposition (ECCE), 2023.
+                </li>
+                <br/>
+                <li>
+                    <i>A. Akash, B. Ahn, A. Jenkins, <b>A. Khot</b>, L. Silva, H. Tavares-Vengas, T. Kim</i>
+                    <br/>
+                    <b>"Smart Grid Device-Specific Malware File Detection using Quantum-Convolutional Neural Network with Deep Transfer Learning"</b>
+                    <br/>
+                    IEEE Design Methodologies Conference, 2023.
+                </li>
+            </ul>
         </div>
-      </section>
-      
-
-    <!-- Projects -->
-    <section id="projects" class="project-container container">
-      <div class="new-division"></div>
-      <div class="content-text">
-        <h2>Projects</h2>
-        <p>Check out some of my personal and paid projects</p>
-      </div>
-
-    <!-- Popup container initially hidden -->
-      <div id="popup" style="display: none;"></div>
-
-      <article class="project">
-        <!-- Project 1 ML/DS-->
-        <div href="" class="card" id="mlds-card" onclick="openPopup('Data Science, Machine Learning & Deep Learning', 'Discover a diverse world of data science and machine learning all in one place! From predicting bulldozer prices to advanced classification using CNNs, ANNs, and GANs, this folder offers hands-on experience in data-driven decision-making. Dive in now!', 'https://github.com/ameyakhot/DataScience-MachineLearning')">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Data Science, Machine Learning & Deep Learning</h3>
-              <p>CNN, ANN, GANs, Data Science experiments</p>
-            </div>
-            <div class="project-link">
-              <a href="https://github.com/ameyakhot/DataScience-MachineLearning" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        <div href="" class="card" onclick="openPopup('Game Development', 'Embark on game development with this dynamic folder! From a thrilling 2D game in PyGame to other engaging projects, it\'s your gateway to game creation. Ideal for all skill levels, these projects offer a chance to boost your skills. Start your PyGame journey today!', 'https://github.com/ameyakhot/Space-Invaders-2D-Game')">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Game Development</h3>
-              <p>PyGame</p>
-            </div>
-            <div class="project-link">
-              <a href="https://github.com/ameyakhot/Space-Invaders-2D-Game" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        <div href="" class="card" onclick="openPopup('Full Stack Applications', 'Discover a world of full-stack wizardry! Dive into projects spanning Python, Java, Node.js, React, and the robust databases MongoDB and PostgreSQL. These projects are a treasure trove for full-stack enthusiasts, offering hands-on experience with a rich stack of technologies. Unleash your full-stack potential today!', 'https://github.com/ameyakhot/full-stack')">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Full Stack Applications</h3>
-              <p>Python, Java, Node.js, React, MongoDB, PostgresQL</p>
-            </div>
-            <div class="project-link">
-              <a href="https://github.com/ameyakhot/full-stack" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        <div href="" class="card" onclick="openPopup('React Projects', 'Step into React-land with these fun and quirky projects. Join me on my lighthearted journey as I tinker with React and learn along the way. Expect a few chuckles and code quirks!', 'https://github.com/ameyakhot/react-trials')">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>React Projects</h3>
-              <p>Javascipt Frontend Trials</p>
-            </div>
-            <div class="project-link">
-              <a href="https://github.com/ameyakhot/react-trials" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- see more button -->
-      <!-- <a href="#" class="btn btn-secondary"
-        target="_blank" >See More <i class="fas fa-arrow-right"></i
-      ></a> -->
     </section>
-
+    
+    <!-- Research Presentations Section -->
+    <section id="presentations" class="presentations-container container">
+        <div class="new-division"></div>
+        <div class="content-text">
+            <h2>Research Presentations</h2>
+            <br/>
+            <ul>
+                <li>
+                    <b>"Quantum Inspired Machine Learning Demonstration using a Physics-based Ising Solver Chip"</b>
+                    <br/>
+                    Presented at IEEE Energy Conversion Congress and Exposition (ECCE), Nashville, Tennessee, Nov 2, 2023.
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section id="blogs" class="blogs-container container">
+        <div class="new-division"></div>
+        <div class="content-text">
+            <h2>Blogs</h2>
+            <p>
+                I can explain Quantum Computing to anyone. Proving my mettle here.
+            </p>
+            <a href="https://medium.com/@ameyakhot18" class="btn btn-secondary" target="_blank">Visit My Blog</a>
+        </div>
+    </section>
+    
     <!-- Footer -->
     <footer id="footer">
-      <div class="container">
-        <div class="mail-container">  
-          <a href="mailto:ameyakhot@protonmail.com">ameyakhot@protonmail.com</a>
+        <div class="container">
+            <div class="mail-container">
+                <a href="mailto:ameyakhot@protonmail.com">ameyakhot@protonmail.com</a>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/ameyakhot/" target="_blank">
+                    <img src="./assets/linkedin-icon.svg" alt="Linkedin" />
+                </a>
+                <a href="https://github.com/ameyakhot" target="_blank">
+                    <img src="./assets/github-icon.svg" alt="GitHub" />
+                </a>
+            </div>
         </div>
-        <!-- Social links -->
-        <div class="social">
-          <a href="https://www.linkedin.com/in/ameyakhot/" target="_blank">
-            <img src="./assets/linkedin-icon.svg" alt="Linkedin"/>
-          </a>
-          <a href="https://github.com/ameyakhot" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
-        </div>
-
-        <!-- Attribution -->
-        <div class="attribution">
-          <a
-            href="https://github.com/CommunityPro/portfolio-html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          </a>
-        </div>
-        <!-- <p>Copyright &copy; Communitypro <span id="datee"></span>, All rights reserved</p> -->
-      </div>
     </footer>
-    <script src="js/script.js"></script>
-  </body>
+</body>
 </html>
